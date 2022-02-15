@@ -4,6 +4,8 @@ import json
 import os
 import django_heroku
 import dj_database_url
+import cloudinary
+import cloudinary_storage
 
 with open("secret.json") as f:
     secret = json.loads(f.read())
@@ -41,6 +43,8 @@ INSTALLED_APPS = [
     'applications.home',
     'phonenumber_field',
     'whitenoise.runserver_nostatic',
+    'cloudinary',
+    'cloudinary_storage',
 ]
 
 MIDDLEWARE = [
