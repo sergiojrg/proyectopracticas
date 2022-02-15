@@ -51,10 +51,9 @@ CKEDITOR_CONFIGS = {
 }
 
 cloudinary.config( 
-  cloud_name = "equiposimax", 
-  api_key = "281591744357777", 
-  api_secret = "281591744357777",
-  secure = True
+  cloud_name = "imaxtamp", 
+  api_key = "757462246243276", 
+  api_secret = "o9BQsTIb_2X9qCfR991z20tVRQk" 
 )
 
 django_heroku.settings(locals(),staticfiles=False)

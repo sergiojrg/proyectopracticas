@@ -5,7 +5,8 @@ import os
 import django_heroku
 import dj_database_url
 import cloudinary
-import cloudinary_storage
+import cloudinary.uploader
+import cloudinary.api
 
 with open("secret.json") as f:
     secret = json.loads(f.read())
