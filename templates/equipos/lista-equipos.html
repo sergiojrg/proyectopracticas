@@ -14,7 +14,7 @@
             <div class="equipo">
                 {% for equipo in equipos %}
                     <div class="equipo__item">
-                        <img src="{{equipo.imagen2.url}}" class="equipo__img">
+                        <img src="{{equipo.imagen.url}}" class="equipo__img">
                         <h4 class="equipo__nombre">{{equipo.nombre}}</h4>
                         <a href="{% url 'equipos_app:detalles' equipo.id %}" class="equipo__btn">Ver</a>
                     </div>
