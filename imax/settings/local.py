@@ -50,4 +50,11 @@ CKEDITOR_CONFIGS = {
     }
 }
 
+cloudinary.config( 
+  cloud_name = "equiposimax", 
+  api_key = "281591744357777", 
+  api_secret = "281591744357777",
+  secure = True
+)
+
 django_heroku.settings(locals(),staticfiles=False)
