@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section class="login">
+        <div class="login__container">
+            <form method="POST" class="formulario">
+                {%csrf_token%}
+                <h2>Inicio de Sesión</h2>
+                <div class="formulario__item">
+                    <label>Nombre de usuario</label>
+                    {{form.username}}
+                </div>
+                <div class="formulario__item">
+                    <label>Contraseña</label>
+                    {{form.password}}
+                </div>
+
+                
+                <div class="btn">
+                    <button type="submit" class="formulario__btn">
+                        Login<box-icon name='log-in' color='#ffffff' ></box-icon>
+                    </button>
+                </div>
+                {% if request.GET.next %}
+                    <input type="hidden" name="next" value="{{ request.GET.next }}"/>
+                {% endif %}
+            </form>
+    </section>
+
+</body>
+<script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+</html>
+

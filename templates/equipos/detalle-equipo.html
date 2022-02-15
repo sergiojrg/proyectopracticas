@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/detalle-equipo.css' %}">
+{% endblock styles %}
+
+{% block body %}
+
+    <section class="dispositivo">
+        <div class="dispositivo__container container">
+            <div class="datos">
+                <img src="{{detalle.imagen.url}}" alt="{{detalle.nombre}}">
+                <div class="dispositivo__textos">
+                    <h4>{{detalle.nombre}}</h4>
+                    <p><span class="verde">Marca:</span> {{detalle.marca}}</p>
+                    <p><span class="verde">Ingeniero:</span> {{detalle.ingeniero}}</p>
+                    <p><span class="verde">Telefono del Ingeniero:</span> <a href="tel:{{detalle.telefono}}" class="telLink">{{detalle.telefono}}</a></p>
+                    <p><span class="verde">No° Serie:</span> {{detalle.serie}}</p>
+                    <p><span class="verde"> Duración de la poliza:</span> {{detalle.duracion}}</p>
+                    <p><span class="verde">Caducidad de la poliza:</span> {{detalle.caducidad}}</p>
+                    <p><span class="verde">Terminos:</span> {{detalle.terminos}}</p>
+                    <label class="incluye" for="lista">Incluye:</label>
+                    <p id="lista" class="lista">{{detalle.incluye|safe}}</p>
+                </div>
+        </div>
+    </section>
+
+{% endblock %}

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+:root{
+    --verde_imax: #00544D;
+    --verde_imax_focus: #022f2c;
+    --rojo_imax: rgb(132, 9, 30);
+    --rojo_imax2: rgb(170, 26, 10);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    overflow:hidden;
+    height:100vh;
+}
+
+.login{
+    height:100%;
+    background-image:url('../img/xray2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+
+.login__container{
+    margin:0 auto;
+    width:100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.formulario{
+    background: #fff;
+    width: 350px;
+    height:270px;
+    border-radius: 7px;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.formulario > h2{
+    font-size:2rem;
+}
+
+label{
+    font-size:1.2rem;
+    margin-bottom: 10px;
+}
+
+.formulario__item{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-direction: column;
+}
+
+.formulario__item:nth-last-child(){
+    margin-bottom: 10px;
+}
+
+.login__input{
+    width:250px;
+    font-size:1rem;
+    padding:4px;
+}
+
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario__btn{
+    width:150px;
+height:35px;
+    padding:6px 20px;
+    background-color:var(--rojo_imax);
+    color:#fff;
+    border:none;
+    outline:none;
+    border-radius:6px;
+    margin:0 auto;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor:pointer;
+    line-height: 100%;
+    display: flex;
+    align-items:center;
+    justify-content:center
+}
+
+.fa-solid{
+    color:#fff;
+}
+
+@media screen and (max-width:400px){
+    .login__container{
+        width: 80%;
+    }
+
+    .formulario > h2{
+        font-size:1.5rem;
+    }
+
+    label{
+        font-size:1.1rem;
+    }
+}

@@ -1,0 +1,9 @@
+{% load static %}
+
+<div class="navegador__container container">
+    <img src="../../static/img/logo.png" class="logo" alt="LogoImax">
+    <nav class="navegador">
+        <a href="{% url 'equipos_app:equipos' %}">Ver todo</a>
+        <a href="{% url 'home_app:logout' %}">LogOut</a>
+    </nav>
+</div>

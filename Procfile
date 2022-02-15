@@ -1,0 +1,1 @@
+web gunicorn imax.wsgi:application --preload --log-file -
