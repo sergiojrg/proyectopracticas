@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+:root{
+    --verde_imax: #00544D;
+    --verde_imax_focus: #022f2c;
+    --rojo_imax: rgb(132, 9, 30);
+    --rojo_imax2: rgb(170, 26, 10);
+}
+
+.dispositivo{
+    /* height: calc(100vh - 80px); */
+    height: auto;
+    max-height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.dispositivo__container{
+    height: 100%;
+}
+
+.datos{
+    background: #fff;
+    width: 520px;
+    min-height: 100vh;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 6px;
+    padding:10px;
+    color:var(--verde_imax_focus);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 50px;
+}
+
+.verde{
+    color:var(--verde_imax_focus);
+    font-weight: 700;
+}
+
+.datos > img{
+    width: 80%;
+    object-fit: cover;
+}
+
+.dispositivo__textos{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:flex-start;
+    gap:0.5em;
+}
+
+.dispositivo__textos > h4{
+    font-size:1.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.lista{
+    width: 100%;
+    list-style: none;
+    padding:0 20px;
+}
+
+.telLink{
+    text-decoration: none;
+    font-weight: 700;
+    color:var(--rojo_imax);
+}
+
+ul{
+    list-style: none;
+}
+
+.pagination-container{
+    display: none;
+}
+
+@media screen and (max-width:700px){
+    .dispositivo__container{
+        margin:40px auto;
+    }
+
+    .datos{
+        width: 400px;
+        min-height: 500px;
+        margin-bottom: 20px;
+    }
+
+    .datos > img{
+        width: 300px;
+    }
+}

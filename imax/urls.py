@@ -25,3 +25,5 @@ urlpatterns = [
     path('ckeditor/', include('ckeditor_uploader.urls')),
 ] + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
+admin.site.site_header = 'Administración de IMAX'
+admin.site.site_title = 'Administración de IMAX'
