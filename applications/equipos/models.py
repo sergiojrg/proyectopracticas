@@ -6,7 +6,7 @@ from cloudinary.models import CloudinaryField
 class EquiposModel(models.Model):
     nombre = models.CharField('Nombre del Equipo',max_length=80)
     marca = models.CharField('Marca',max_length=80)
-    telefono = PhoneNumberField(unique = True, null = False, blank = False)
+    telefono = PhoneNumberField(unique = False, null = False, blank = False)
     ingeniero = models.CharField('Nombre del Ingeniero',max_length=120)
     serie = models.CharField('Número de Serie',max_length=80)
     # imagen = models.ImageField('Imagen',upload_to='EquiposIMG',blank=False,null=False)  
